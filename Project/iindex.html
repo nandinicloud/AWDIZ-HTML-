@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/bb4cbd2b03.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/png;base64,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">
+    <title>PUMA.COM | Forever Faster</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+        a{
+            color: white;
+            font-weight: 400;
+            font-family:sans-serif,system-ui;
+            
+        }
+        #fullpage{
+            width: 100%;
+            /* border: 2px solid black; */
+        }
+        #header{
+            width: 100%;
+            height: 44px;
+            background-color: #8a7350;
+            text-align: center;
+            color: white;
+            padding-top: 1%;
+            border:0px solid black;
+            position: sticky;
+          top:0px;
+          left: 0px;
+            font-weight: 900;
+               
+        }
+        #navbar{
+            width: 100%;
+            height: 80px;
+            background-color: black;
+            display: flex;
+            justify-content: space-between;
+            border: 2px solid black; 
+            position: sticky;
+          top: 44px;
+          left: 0px;
+            /* color: white;  */
+            
+        }
+        #logo{
+          width: 62%;
+          display: flex;
+          align-items: center;
+          color: white;
+          justify-content: space-between;
+       /* border: 2px solid red;   */
+        }
+       
+        #search{
+        
+          margin-left: 12%;
+          color: white;
+          display: flex;
+          padding-left: 1px;
+          align-items: center;
+          font-size: medium;
+          font-weight: 700;
+          font-family: "Lucida Console", "Courier New", monospace;
+          border: 1px solid black;
+          margin: 14px;
+          outline: none  outset gray;
+          word-spacing: 40px;
+          
+        }
+        #search i{
+            padding-left: 15px;
+            display: flex;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+        #search p{
+            display: flex;
+             margin: auto;
+             padding-left: 0px;
+             padding-right: 10px;
+             text-align: center;
+             justify-content: space-between;
+        }
+
+        
+        #icon{
+          width: 10%;
+          color: white;
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          margin-right: 2%;
+          
+          /* border: 2px solid red;   */
+        }
+        #icon i:hover{
+            width: 30px;
+            height: 30px;
+            border-radius: 60%;
+            padding-bottom: 2%;
+  background-color: silver;
+        }
+        #navbar2{
+            width: 100%;
+            height: 90px;
+            background-color: #ac1f29;
+            text-align: center;
+            color: white;
+            padding-top: 1%;
+            /* border: 2px solid black;  */
+           
+        }
+        #body{
+            width: 100%;
+            height: 2000px;
+            background-color: white;
+            /* border: 2px solid black; */
+            color: #ac1f29;  
+            text-align: center; 
+            /* margin-bottom: 30px; */
+        }
+        .parentdiv {
+        width: 100%;
+        /*border: 2px solid black; */
+        display: flex;
+        font-size: 60px;
+        text-align: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      .childdiv {
+        /* border: 2px solid red; */
+        height: 190px;
+        width: 19%;
+        margin-bottom: 45px;
+      }
+        #footer{
+            width: 100%;
+            height: 50px;
+             border: 2px solid black;
+            text-align: center;  
+            background-color: black; 
+            color: burlywood;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="fullpage">
+      <div id="header">
+        <p>EXTRA 5% DISCOUNT FOR ALL ONLINE PAYMENTS</p>
+      </div>
+      <div id="navbar">
+        <div id="logo">
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQay3Olc8dCyQP8VsPElw9hojRMV_6foXMepvofdXM_DQ&s" alt="pumalogo" style="height:62px; width:62px;">   
+            </div>
+            <a href="#">New</a>
+            <a href="#">Women</a>
+            <a href="#">Men</a>
+            <a href="#">Kids</a>
+            <a href="#">FENTYxPUMA</a>
+            <a href="#">Motorsport</a>
+            <a href="#">Collaborations</a>
+            <a href="#">Sports</a>
+            <a href="#">Outlets</a>
+        </div>
+        <div id="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input class="search" placeholder="Search"/>
+        </div>
+        <div id="icon">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+            <i class="fa-regular fa-user"></i>
+        </div>
+      </div>
+      <div id="navbar2">
+            <p>EXTRA 15% OFF*</p>
+            <p>*ON CLOTHING ABOVE ₹1999 | *ON FOOTWEAR ABOVE ₹3999</p>
+            <p>Auto-applied at checkout | *Exclusions apply</p>
+      </div>
+      
+
+      <h2 style="background-color: whitesmoke; text-align: center; color: black;"><B>MEN'S NEW ARRIVAL</B></h2>
+      <div id="body">
+        <div class="parentdiv">
+            <div class="childdiv">
+                <img
+                src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/524901/22/mod01/fnd/IND/fmt/png/SEASONS-Men"
+                alt="t=shirt"
+                width="100%"
+                height="200px"
+               
+        />
+        <h3 class="childdiv">snekkar</h3> 
+            </div>
+            <div class="childdiv">
+                <img
+                src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/624375/89/mod01/fnd/IND/fmt/png/DOWNTOWN-180-Logo-Unisex-T-shirt"
+                alt="Tshirt"
+                max width="100%"
+                height="200px"
+        />
+        
+            </div>
+            <div class="childdiv">
+                <img
+                src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/680817/49/mod01/fnd/IND/fmt/png/Men's-Slim-Fit-Polo-T-shirt"
+                alt="Tshirt"
+                width="100%"
+                height="200px"
+                
+        />
+        
+            </div>
+            <div class="childdiv">
+                <img
+                src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/680817/01/mod01/fnd/IND/fmt/png/Men's-Slim-Fit-Polo-T-shirt"
+                alt="Tshirt"
+                width="100%"
+                height="200px"
+        />
+        
+            </div>
+            <div class="childdiv">
+                <img
+                src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/627868/87/fnd/IND/fmt/png/T7-Shooting-Men's-Relaxed-Fit-Shirt"
+                alt="Tshirt"
+                width="100%"
+                height="200px"
+        />
+        
+            </div>
+            <div class="childdiv">
+                <img
+                src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/624052/01/fnd/IND/fmt/png/House-of-Graphics-%C3%80-LA-VOL%C3%89E-Men's-T-shirt"
+                alt="Tshirt"
+                width="100%"
+                height="200px"
+        />
+        
+            </div>
+            <div class="childdiv">
+                <img
+                src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/624052/02/fnd/IND/fmt/png/House-of-Graphics-%C3%80-LA-VOL%C3%89E-Men's-T-shirt"
+                alt="Tshirt"
+                width="100%"
+                height="200px"
+        />
+        
+            </div>
+            <div class="childdiv">
+                <img
+                src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/586696/03/mod01/fnd/IND/fmt/png/Men's-Regular-Fit-Track-Jacket"
+                alt="Tshirt"
+                width="100%"
+                height="200px"
+        />
+        
+            </div>
+            <div class="childdiv">
+                <img
+                src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/620934/01/mod01/fnd/IND/fmt/png/Scuderia-Ferrari-Race-T7-EcoLite-Men's-Jacket"
+                alt="Tshirt"
+                width="100%"
+                height="200px"
+        />
+        
+            </div>
+            <div class="childdiv">
+                <img
+                src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/586696/01/mod01/fnd/IND/fmt/png/Men's-Regular-Fit-Track-Jacket"
+                alt="Tshirt"
+                width="100%"
+                height="200px"
+        />
+        
+            </div>
+            <div class="childdiv">
+                <img
+                src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/675508/44/mod01/fnd/IND/fmt/png/PUMA-Men's-Stripe-T-Shirt-&-Shorts-Set"
+                alt="Tshirt"
+                width="100%"
+                height="200px"
+        />
+        
+            </div>
+            <div class="childdiv">
+                <img
+                src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/675509/87/mod01/fnd/IND/fmt/png/PUMA-Men's-Stripe-T-Shirt-&-Shorts-Set"
+                alt="Tshirt"
+                width="100%"
+                height="200px"
+        />
+        
+            </div>
+            <div class="childdiv">
+                <img
+                src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/624048/02/mod03/fnd/IND/fmt/png/GRAPHICS-Men's-Relaxed-Fit-Tee"
+                alt="Tshirt"
+                width="100%"
+                height="200px"
+        />
+        
+            </div>
+            <div class="childdiv">
+                <img
+                src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/624011/24/mod01/fnd/IND/fmt/png/MMQ-Men's-Hoodie"
+                alt="Tshirt"
+                width="100%"
+                height="200px"
+        />
+        
+            </div>
+            <div class="childdiv">
+                <img
+                src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/624016/20/mod01/fnd/IND/fmt/png/MMQ-Men's-Seersucker-Shirt"
+                alt="Tshirt"
+                width="100%"
+                height="200px"
+        />
+        
+            </div>
+            <div class="childdiv">
+                <img
+                src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/624016/87/mod01/fnd/IND/fmt/png/MMQ-Men's-Seersucker-Shirt"
+                alt="Tshirt"
+                width="100%"
+                height="200px"
+        />
+        
+            </div>
+            <div class="childdiv">
+                <img
+                src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/683003/01/mod01/fnd/IND/fmt/png/PALM-RESORT-Men's-Shorts"
+                alt="Tshirt"
+                width="100%"
+                height="200px"
+        />
+        
+            </div>
+            <div class="childdiv">
+                <img
+                src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/624011/43/mod01/fnd/IND/fmt/png/MMQ-Men's-Hoodie"
+                alt="Tshirt"
+                width="100%"
+                height="200px"
+        />
+        
+            </div>
+            
+            <div class="childdiv">
+                <img
+                src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/658967/15/mod01/fnd/IND/fmt/png/FanwearCapsule-Men's-Football-Shortshttps://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/658967/15/mod01/fnd/IND/fmt/png/FanwearCapsule-Men's-Football-Shorts"
+                alt="Tshirt"
+                width="100%"
+                height="200px"
+        />
+        
+           
+        </div><div class="childdiv">
+            <img
+            src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/658967/15/mod01/fnd/IND/fmt/png/FanwearCapsule-Men's-Football-Shortshttps://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/658967/15/mod01/fnd/IND/fmt/png/FanwearCapsule-Men's-Football-Shorts"
+            alt="Tshirt"
+            width="100%"
+            height="200px"
+    />
+    
+       
+    </div>
+      </div>
+      
+    </div>
+</body>    
+</html>
+           
