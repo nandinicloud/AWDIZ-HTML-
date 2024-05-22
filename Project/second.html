@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/bb4cbd2b03.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign up page</title>
+</head>
+<style>
+#signup{
+    width: 35%;
+    height: 650px;
+    border: 2px solid black;
+    border-radius: 12px;
+    margin-left: 450px;
+}
+
+#registration{
+    width: 100%;
+    height: 54%;
+    border-bottom: 1px solid rgb(200,200,200);
+    /* border-radius: 12px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#heading{
+    width: 100%;
+    height: 15%;
+    border-bottom: 1px solid rgb(200,200,200);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+#heading span{
+    font-size: 20px;
+    font-weight: 550;  
+}
+
+#inputfields{
+    width: 90%;
+    /* border: 1px solid black; */
+    border-radius: 12px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#registration > p:nth-child(2){
+    font-size: 22px;
+    font-weight: 550;
+}
+
+#weall{
+    font-size: 16px;
+    width: 90%;
+}
+
+#email{
+    border: 1px solid rgb(200,200,200);
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-radius: 12px 12px 0px 0px;
+}
+
+#email input{
+    border: none;
+    outline: none;
+}
+
+#typeemail{
+    width: 100%;
+    height: 47px;
+    outline: none;
+    border-radius: 12px 12px 0px 0px;
+}
+
+#password{
+    border: 1px solid rgb(200,200,200);
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-radius: 0px 0px 12px 12px;
+}
+
+#typepass{
+    width: 100%;
+    height: 47px;
+    outline: none;
+    border-radius: 0px 0px 12px 12px;
+}
+
+#password input{
+    border: none;
+}
+
+#submitbutton{
+    width: 90%;
+    height: 50px;
+    background-color: rgb(218,11,100);
+    border-radius: 12px;
+    text-align: center;
+    color: white;
+    font-weight: 550;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#social{
+    /* border: 1px solid black; */
+    height: 32%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+#facebook{
+    border: 1px solid black;
+    width: 90%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+    font-weight: 550;
+}
+
+#facebook i{
+    font-size: 20px;
+    margin-left: 20px;
+    color: rgb(24,119,242);
+}
+
+#facebook span{
+    padding-left: 140px;
+}
+
+#google{
+    border: 1px solid black;
+    width: 90%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+    font-weight: 550;
+}
+
+#google i{
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+#google span{
+    padding-left: 140px;
+}
+
+#apple{
+    border: 1px solid black;
+    width: 90%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+    font-weight: 550;
+}
+
+#apple i{
+    font-size: 25px;
+    margin-left: 30px;
+}
+
+#apple span{
+    padding-left: 120px;
+}
+
+#email1{
+    border: 1px solid black;
+    width: 90%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+    font-weight: 550;
+}
+
+#email1 i{
+    font-size: 25px;
+    margin-left: 30px;
+}
+
+#email1 span{
+    padding-left: 140px;
+}
+
+        
+</style>
+<body>
+    <div id="signup">
+        <div id="registration">
+            <div id="heading">
+                <span>Login</span>
+            </div>
+            <p style="padding-right: 290px; font-size: 25px;">Welcome to Airbnb</p>
+            <div id="inputfields">
+                <div id="email"><input type="email" id="typeemail" placeholder="Please Enter email"/></div>
+                <div id="password"><input type="password" id="typepass" placeholder="Please create password"/></div>
+            </div>
+            <div id="weall"><p style="opacity: 0.6;">Well call or text you to confirm your number. Standard message and data rates apply. <b><u>Privacy Policy</u></b></p></div>
+            <div id="submitbutton">
+                <p>Submit</p>
+            </div>
+        </div>
+        <div id="social">
+            <div id="facebook"><i class="fa-brands fa-square-facebook"></i><span>Continue with Facebook</span></div>
+            <div id="google"><i class="fa-brands fa-google"></i><span>Continue with Google</span></div>
+            <div id="apple"><i class="fa-brands fa-apple"></i><span>Continue with Apple</span></div>
+            <div id="email1"><i class="fa-regular fa-envelope"></i><span>Continue with Email</span></div>
+        </div>
+    </div>
+</body>
+</html>
