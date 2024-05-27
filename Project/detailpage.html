@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/bb4cbd2b03.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      * {
+        font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+          Helvetica Neue, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-size: 14;
+      }
+    #fullpage {
+        width: 100%;
+        margin: auto;
+        border: 2px solid blueviolet;
+        height: 1500px;
+      }
+      #navbar{
+        width: 100%;
+        border: 2px solid black;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+      }
+      #logo{
+        width: 15%;
+        /* border: 2px solid black; */
+        display: flex;
+        align-items: center;
+      }
+      #logo > img {
+        height: 45%;
+        width: 50%;
+      }
+      #navigations {
+        height: 55%;
+        width: 29%;
+       border: 2px solid black;
+       border-radius: 15px;
+        display: flex;
+       justify-content: space-around;
+       align-items: center;
+      }
+      .pinks{
+        /* border: 2px solid black; */
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        background-color: rgb(255,56,92);
+       align-content: center;
+      }
+      #profile {
+        width: 20%;
+        /*border: 2px solid black;*/
+        align-items: center;
+        font-size: small;
+        justify-content: left;
+        display: flex; 
+    }
+    #location{
+       /* border: 2px solid black;*/
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        padding: 6%;
+       justify-content: space-around; 
+       display: flex;
+       font-size: small;  font-weight: 900;
+      }
+      .icon{
+        border: 2px solid rgb(195, 177, 177);
+        width: 90px;
+        height: 50px;
+        align-items: center;
+        display: flex;
+        border-radius: 20px;
+        justify-content: space-around;
+        font-weight: 900;
+      }
+      #page{
+        /* border: 2px solid rgb(195, 177, 177); */
+        width: 80%;
+        height: 1300px;
+        margin: auto;
+      }
+      #text{
+        /* border: 2px solid rgb(195, 177, 177); */
+        width: 100%;
+        height: 6%;
+        align-items: center;
+        align-content: center;
+        display: flex;
+        justify-content: space-between;
+      }
+      #side{
+        /* border: 2px solid rgb(195, 177, 177); */
+        width: 15%; 
+        height: 55%;
+        align-content: center;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      #image{
+        /* border: 2px solid rgb(195, 177, 177); */
+        width: 100%;
+        height: 29%;
+        justify-content: space-between;
+        display: flex;
+      }
+      #image1{
+        /* border: 2px solid rgb(195, 177, 177); */
+        width: 49.5%;
+        height: 100%;
+        background-image: url(https://a0.muscache.com/im/pictures/prohost-api/Hosting-1101351292526816575/original/3f145f50-e8b9-47a7-acda-49d212581698.jpeg?im_w=720);
+        background-size: cover;
+      }
+      #imagess{
+        /* border: 2px solid rgb(195, 177, 177); */
+        width: 49.5%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 5px;
+      }
+      #image2{
+        /* border: 2px solid rgb(195, 177, 177); */
+        width: 49.4%;
+        height: 100%;
+        background-image: url("https://a0.muscache.com/im/pictures/prohost-api/Hosting-1101351292526816575/original/ceb7a6de-4cb7-477c-8291-65dd09e6146d.jpeg?im_w=720");
+        background-size: cover;
+    }
+    #image3{
+        /* border: 2px solid rgb(195, 177, 177); */
+        width: 49.4%;
+        height: 100%;
+        background-image: url("https://a0.muscache.com/im/pictures/prohost-api/Hosting-1101351292526816575/original/6aa451fd-82a4-4f36-86d5-51e56bf47b7e.jpeg?im_w=720");
+        background-size: cover;
+    }
+    #divide{
+        border: 2px solid rgb(195, 177, 177);
+        width:  100%;
+        height: 65%;
+        display: flex;
+    }
+    #separte{
+        border: 2px solid rgb(195, 177, 177);
+        width:  68%;
+        height: 85%; 
+    }
+    #separte2{
+        border: 2px solid rgb(195, 177, 177);
+        width:  32%;
+        height: 65%; 
+    }
+    #home{
+        /* border: 2px solid black; */
+        width:  100%;
+        height: 15%; 
+        margin-top: 3%;
+        /* display: flex; */
+    }
+    #guest{
+    /* border: 2px solid black; */
+        width:  40%;
+        height: 25%; 
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+        opacity: 0.9;
+    }
+    #review{
+         width:  40%;
+        height: 25%; 
+        display: flex;
+        align-items: center;
+    }
+    #hosted{
+        border: 2px solid black;
+        width:  100%;
+        height: 13%;
+        display: flex; 
+        align-items: center;
+    }
+    #design{
+        /* border: 2px solid black; */
+        width:  7%;
+        height: 50%; 
+        background-image: url("https://a0.muscache.com/im/pictures/user/944ef3dc-359e-4f05-a87e-b1a5117beb95.jpg?im_w=240");
+        background-size: cover;
+    }
+    #tub{
+        /* border: 2px solid black; */
+        width:  100%;
+        height: 15%;
+        align-items: center;
+        align-content: center;
+    }
+    #tubs{
+        /* border: 2px solid black; */
+        width:  30%;
+        height: 50%; 
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #detail{
+        border: 2px solid black;
+        width:  100%;
+        height: 40%;
+        padding-top: 30px;
+    }
+    #box{
+        border: 2px solid gray;
+        width: 89%;
+        height: 45%;
+        margin-top: 15%;
+    }
+    #amount{
+        width: 89%;
+        height:30%;
+        align-content: center;  
+        margin: auto;
+    }
+    #box2{
+        border:  1px solid grey;
+        width: 89%;
+        height: 35%;
+        margin: auto;
+        border-radius: 15px;
+    }
+    #BOX3{
+        /* border: 2px solid red; */
+        width: 100%;
+        height: 50%;
+        display: flex;
+        /* border-radius: 15px; */
+    }
+    #in{
+        border:  1px solid grey;
+        width: 50%;
+        height: 100%;
+    }
+    #out{
+        border: 1px solid grey;
+        width: 50%;
+        height: 100%;
+    }
+    #guest2{
+        /* border: 2px solid black; */
+        width: 100%;
+        height: 50%;
+        align-content: center;
+    }
+    #reserve{
+        /* border: 2px solid black; */
+        width: 89%;
+        height: 15%;
+        background-color: rgb(221,15,99);
+        margin: auto;
+        margin-top: 3%;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    </style>
+</head>
+<body>
+    <div id="fullpage">
+    <div id="navbar">
+        <div id="logo">
+            <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_B%C3%A9lo.svg/1200px-Airbnb_Logo_B%C3%A9lo.svg.png"
+            alt="Logo" />
+        </div>
+        <div id="navigations">
+            <p>Anywhere </b></p>
+            <p>Any week </p>
+            <p>Add Guest </p>
+            <div class="pinks">
+                <i class="fa-solid fa-magnifying-glass" style="color: aliceblue;"></i>
+            </div>
+        </div>
+        <div id="profile">
+            <h4>Airbnb your home</h4>
+            <div id="location">
+                <i class="fa-solid fa-globe"></i>
+                
+            </div>
+            <div class="icon">
+                <a href="../Project/login.html"><p><i class="fa-solid fa-bars"></i></p></a></i>
+              <a href="../Project/signup.html"><p><i class="fa-solid fa-circle-user"></i></p></a>
+           </div> 
+        </div>
+    </div>
+    <div id="page">
+    <div id="text">
+        <h5 style="font-size: 25px;">Leisurely Stays Jazz by the lake 2BHK, Pawna</h5>
+    <div id="side">
+        <i class="fa-solid fa-upload"></i><p><u>share</u></p>
+        <i class="fa-regular fa-heart"></i><p><u>save</u></p>
+    </div>
+    </div>
+    <div id="image">
+       <div id="image1"></div>
+        <div id="imagess">
+            <div id="image2"></div>
+            <div id="image3"></div>  
+        </div>
+    </div>
+    <div id="divide">
+    <div id="separte">
+        <div id="home">
+            <p style="font-size: 30px;"> <b>Entire home in Pale Pawan Ma, India</b></p>  
+           <div id="guest">
+            <p style="font-size: 16px;">6 guest</p>
+            <p>.</p>
+            <p style="font-size: 16px;">2 bedrooms</p>
+            <p>.</p>
+            <p style="font-size: 16px;">2 beds</p>
+            <p>.</p>
+            <p style="font-size: 16px;">3 Bathrooms</p>
+           </div>
+           <div id="review"><i class="fa-solid fa-star"></i> <p><b><u>2 reviews</u></b></p></div>
+        </div>
+        <div id="hosted">
+            <div id="design"></div>
+            <p><b>Hosted by Vineeth </b></p>
+            <p>5 Year Hosting</p>
+        </div>
+        <div id="tub">
+            <div id="tubs"><i class="fa-solid fa-bath"></i>
+            <p><b>Unwind in the hot tub </b></p></div>
+            <div><p style="padding-left: 8%;">This is one of the few places in the area with this amenity. </p></div>
+        </div>
+        <div id="detail">
+            <p style="font-size: 18px; font-weight: 300; opacity: 0.6; ">Tucked in the midst of a gorgeous location, crafted with modern décor and family- friendly living spaces, Jazz by the lake is a Private Villa 
+                to Relax and Rendezvous with Lush Green Surroundings at Pawna Lake.
+                 Not to mention, 15 min drive from expressway, private open sky Jacuzzi, lawn area, and cozy rooms are perfect for a quick getaway! </p>
+            <p style="padding-top: 50px; opacity: 0.6; ">Forget your worries in this spacious and serene space... </p>
+            <p style="padding-top: 10px;"><b><u>Show more</u></b></p>
+        </div>
+    </div>
+    <div id="separte2">
+        <div id="box">
+            <div id="amount">
+                <p style="font-size: 30px;">₹37,592 </p>
+                    <p style="opacity: 0.6;"><u>toatal before taxes</u></p>
+            </div>
+            <div id="box2">
+                <DIV id="BOX3">
+            <div id="in">
+                <p>CHECK-IN</p>
+                <P style="opacity: 0.6;">14-06-2025</P>
+            </div>
+            <div id="out">
+                <P>CHECK-OUT</P>
+                <P style="opacity: 0.6;">19-06-2025</P>
+            </div>
+        </DIV>
+        <div id="guest2">
+           <p>GUESTS</p>
+           <P  style="opacity: 0.6;">1 guest</P>
+          <p style="padding-left: 85%;"><i class="fa-solid fa-greater-than"></i></p> 
+        </div>
+        <!-- <div id="reserve">
+            <p style="color: white; font-size: 20px; font-weight: 300; padding-left: 25%; padding-top: 3%;">Reserve</p>
+        </div> -->
+            </div>
+            <div id="reserve">
+                <p style="color: white; font-size: 20px; font-weight: 300; padding-left: 25%; padding-top: 3%;">Reserve</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+    vhj
+</div>
+<!-- page -->mzbnbkktguyschj bcdsh
+    </div>
+</body>
+</html>
