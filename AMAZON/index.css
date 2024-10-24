@@ -1,0 +1,273 @@
+#fullpage {
+    height: 3000px;
+    width: 100%;
+    border: 2px black solid;
+}
+#box {
+    height: 72px;
+    width: 100%;
+    border: 2px black solid;
+    align-content: center;
+    display: flex;
+    background-color: rgb(19,25,33);
+    text-align: center;
+    justify-items: center;
+}
+.logo{
+    height: 52px;
+    width: 110px;
+    border: 1px red solid
+}
+#deliver{
+    height: 52px;
+    width: 150px;
+    border: 1px red solid;
+    align-content: center;   
+}
+#search{
+    height: 52px;
+    width: 50%;
+    border: 1px red solid;
+    display: flex;
+    align-content: center;
+}
+#all{
+    height: 52px;
+    width: 10%;
+    border: 1px red solid;
+    display: flex;
+    align-content: center;
+    text-align: center;
+    background-color: aliceblue;
+}
+#secondbox{
+    height: 52px;
+    width: 100%;
+    border: 1px red solid;
+    display: flex;
+     justify-content: space-between;
+    background-color: rgb(35,47,62);
+}
+
+.text{
+color: white;
+cursor: pointer;
+}
+
+.text:hover {
+    border: 1px solid white;
+    border-radius: 2px;
+  }
+
+#bars{
+    height: 52px;
+    width: 50px;
+    /* border: 1px red solid; */
+    align-content: center;   
+}
+#FRESH{
+    height: 52px;
+    width: 70px;
+    /* border: 1px red solid; */
+    padding-top: 1%;
+
+}
+#TV{
+    height: 52px;
+    width: 120px;
+    /* border: 1px red solid; */
+    padding-top: 1%;
+    text-align: center;
+
+}
+#SELL{
+    height: 52px;
+    width: 50px;
+    /* border: 1px red solid; */
+    padding-top: 1%;
+
+}
+#BS{
+    height: 52px;
+    width: 95px;
+    /* border: 1px red solid; */
+    padding-top: 1%;
+}
+#TD{
+    height: 52px;
+    width: 100px;
+    /* border: 1px red solid; */
+    padding-top: 1%;
+
+}
+#MO{
+    height: 52px;
+    width: 70px;
+    /* border: 1px red solid; */
+    padding-top: 1%;
+
+}
+#CS{
+    height: 52px;
+    width: 120px;
+    /* border: 1px red solid; */
+    padding-top: 1%;
+
+}
+#P{
+    height: 52px;
+    width: 90px;
+    /* border: 1px red solid; */
+    padding-top: 1%;
+
+}
+#E{
+    height: 52px;
+    width: 90px;
+    /* border: 1px red solid; */
+    padding-top: 1%;
+
+}
+#F{
+    height: 52px;
+    width: 75px;
+    /* border: 1px red solid; */
+    padding-top: 1%;
+
+}
+#NR{
+    height: 52px;
+    width: 100px;
+    /* border: 1px red solid; */
+    padding-top: 1%;
+
+}
+#HK{
+    height: 52px;
+    width: 120px;
+    /* border: 1px red solid; */
+    padding-top: 1%;
+}
+#AP{
+    height: 52px;
+    width: 90px;
+    /* border: 1px red solid; */
+    padding-top: 1%;
+
+}
+#C{
+    height: 52px;
+    width: 85px;
+    /* border: 1px red solid; */
+    text-align: center;
+    padding-top: 1%;
+
+}
+#CM{
+    height: 52px;
+    width: 130px;
+    /* border: 1px red solid; */
+    align-items: center;
+    padding-top: 1%;
+
+}
+#page{
+    height: 2500px;
+    width: 100%;
+    border: 2px black solid;
+    margin:auto;
+
+}
+#pink{
+    height: 550px;
+    width: 98%;
+    border: 2px violet solid;
+    background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/img24/Beauty/SVD/Sept/Makeup-PC._CB564592935_.jpg);
+    background-size: cover;
+
+}
+#box1{
+    height: 500px;
+    width: 98%;
+    border: 2px rgb(22, 1, 22) solid;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 18%;
+    margin-left: 1%;
+}
+#box2{
+    height: 440px;
+    width: 24%;
+    border: 2px violet solid;
+    background-color: white;
+}
+#box3{
+    height: 440px;
+    width: 24%;
+    border: 2px violet solid;
+    background-color: white;
+}
+#box4{
+    height: 440px;
+    width: 24%;
+    border: 2px violet solid;
+    background-color: white;
+}
+#box5{
+    height: 440px;
+    width: 24%;
+    border: 2px violet solid;
+    background-color: white;
+}
+#reverse{
+    height: 45px;
+    width:75%;
+    /* border: 2px red solid; */
+    padding-top: 2%;    
+    font-size: 22px;
+    margin-top: 5%;
+    font-weight: 800;
+}
+#container{
+        height: 70%;
+        width: 98%;
+        /* border: 2px green solid; */
+}
+#container1{
+    height: 99%;
+    width: 95%;
+    border: 2px red solid;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.img1{
+    height: 35%;
+    width: 45%;
+    border: 2px red solid;
+   background-size: cover;
+    background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_furnishings_2._SY116_CB555624324_.jpg);
+}
+.img2{
+    height: 35%;
+    width: 45%;
+    border: 2px red solid;
+    background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_decor_1._SY116_CB555624324_.jpg);
+    background-size: cover;
+}
+.img3{
+    height: 35%;
+    width: 45%;
+    border: 2px red solid;
+    background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_storage_1._SY116_CB555624324_.jpg);
+    background-size: cover;
+}
+.img4{
+    height: 35%;
+    width: 45%;
+    border: 2px red solid;
+    background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_lighting_2._SY116_CB555624324_.jpg);
+    background-size: cover;
+
+}
